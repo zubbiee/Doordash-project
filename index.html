@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Lobster&family=Poppins:wght@700&family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce29807884.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        creating a div and adding an image to it and giving it a relative 
+        position to allow following elements to be positioned right on top
+        of the image
+    -->
+    <div id="first-container">
+        <img src="https://i.postimg.cc/YCKPyMG8/firstimage.jpg" alt="image" width="100%">
+        <!--creating subdivs within-->
+        <div id="sign">
+           <span id="sign-in"><a href="">sign in</a></span>&nbsp;
+           <span id="sign-up"><a href="">sign up</a></span>
+        </div>
+        <div id="first-container-sub">
+            
+             <h2>Discover restaurants near you</h2>
+           <!--
+            creating an absolutely positioned div that contains a text input together with an 
+            address icon to the left and and an arrow button to the right
+            which also acts as a link
+         -->
+            <div id="search-bar">
+                    <div id="input">
+                         <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Enter delivery address">
+                     </div>
+                    <a href="">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+               
+           </div>
+           
+        </div>
+        <!--
+            creating another absolutely positioned div which is a link
+            itself
+        -->
+        <div id="sign-in-for">
+            <a href="">
+            <i class="fa-regular fa-user"> &nbsp;
+                <span id="text">Sign in for saved address</span></i>
+            </a>
+        </div>
+    </div>
+
+    <!--
+        creating a relatively positioned div with subdivs
+    -->
+        <div  id="scoot-scoot-container">
+            <!--
+                creating the first subdiv which is positioned absolutely
+            -->
+            <div id="scoot-scoot">
+                <img src="https://cdn.doordash.com/media/consumer/home/landing/new/ScootScoot.svg">
+            <h3>Become a dasher</h3>
+            <p>As a delivery driver, you'll<br>
+                 make reliable money—working<br> 
+                 anytime, anywhere.</p><br>
+                 <a href="">start earning &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div id="shop">
+                <img src="https://cdn.doordash.com/media/consumer/home/landing/new/Storefront.svg">
+            <h3>Become a<br> Partner</h3>
+            <p>   Grow your business and reach<br>
+                 new customers by partnering<br> with us.</p><br>
+                 <a href="">sign up your store &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div id="phone">
+                <img src="https://cdn.doordash.com/media/consumer/home/landing/new/iphone.svg">
+                <h3>
+                    Get the best <br>DoorDash<br> experience</h3>
+                <p>  Experience the best your <br>
+                    neighborhood has to offer,<br> 
+                    all in one app.</p><br>
+                    <a href="">get the app &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!--
+                creating a div still positioned absolute to the last
+                relative positioned div
+            -->
+                <div id="second-container-text">
+                    <h3>Everything you <br>
+                        crave delivered</h3>
+                    <h4>Your favourite local restaurants</h4>
+                    <p>Get a slice of pizza or the whole pie delivered, or pick<br>
+                         up house lo mein from the Chinese takeout spot you've<br> been meaning to try.</p>
+                        <a href="">
+                            Find restaurants
+                        </a>
+                        </div>
+                <div id="second-container-image">
+                    <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/download_the_app_desktop.png">
+                </div>
+            
+        </div><br>
+           <!--
+            creating a div positioned relatively and giving it a margin-top
+            value to return the page to its normal flow and preventing
+            elements from going behind previous absolutely positioned elements
+        -->
+    <div id="container-pink">
+        <div id="container-pink-image">
+            <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/dashpass_desktop.png" alt="image">
+        </div>
+     <!--
+        creating absolutely positioned divs to place the contained elements
+    
+    -->
+        <div id="container-pink-text">
+            <h3>DashPass is delivery for less</h3>
+            <p>Members get a $0 delivery fee on DashPass orders, 
+                5%<br>
+                 back on pickup orders, and so much more. 
+                Plus, it's free<br> for 30 days.</p><br>
+                <a href="">
+                    Get dash pass
+                </a>
+        </div>
+    </div>
+    <div id="container-fruits">
+        <!--
+            creating a div with an image within while giving the div its self 
+            a see through rgba value and giving the image an opacity value
+            to give it a black tint as seen in the results
+        -->
+       <div id="container-fruits-image"> 
+        <img src="/images/fruits.jpg" alt="image">
+    </div>
+    <div id="container-fruits-text">
+        <h3>Get grocery and<br> convenience store<br> essentials</h3>
+        <p> Grocery delivery, exactly how you want it.<br><br>
+           <span id="small-text"> Shop from home and fill your cart with fresh produce, 
+            frozen entrees, deli<br> delights, and more.</span></p><br>
+            <a href="">
+                Shop groceries
+            </a>
+    </div>
+    
+        <!--
+            creating another relatively positioned div with absolute positioned 
+            subdivs which are styled accodingly in the css editor
+        -->
+            <div id="container-items">
+                <div id="container-items-text">
+                     <h3>Convinience stores <br>
+                     at your doortep</h3>
+                     <p>Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.</p>
+                     <a href="">
+                    shop now
+                     </a>
+                </div>
+                <div id="container-items-image">
+                    <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/convenience_desktop.png"
+                    alt="image">
+                </div>
+            </div>
+            <!--
+                creating another div being arranged to take a grid form
+            -->
+      <div id="grid-boxes">
+            <div>
+                <h2>Helping you with to-dos<br> and gifting</h2>
+            </div>
+            <div id="grid-boxes-set-1">
+                
+                
+                <div id="grid-boxes-image-1">
+                    <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/package_pickup_desktop.png"
+                    alt="image">
+                    <h3>Return packages from<br> home</h3>
+                    <p>Request a package pickup with just a few taps and get your returns dropped off at carriers like UPS, FedEx, and USPS.</p>
+                    <a href="">
+                        Try package pickup
+                    </a>
+                </div>
+                <div id="grid-boxes-image-2">
+                    <img src="https://img.cdn4dd.com/s/managed/catex/bts-backpack.png"
+                    alt="image">
+                    <h3>Back to school shopping</h3>
+                    <p>From school snacks to notebooks, find everything on your back to school list.</p>
+                    <a href="">
+                        Shop now
+                    </a>
+                </div>
+                <div id="grid-boxes-image-3">
+                    <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/alcohol_desktop.png"
+                    alt="image">
+                    <h3>Restock the minibar</h3>
+                    <p>Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer, mixers, champagne, and wine delivered fast.*</p>
+                    <a href="">
+                        Shop alchohol
+                    </a>
+                    <p style="font-size: x-small;">*Must be 21+. Enjoy responsibly.</p>
+                </div>
+                <div id="grid-boxes-image-4">
+                    <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/pet_supplies_desktop.png"
+                    alt="image">
+                    <h3>What your pets need, and want</h3>
+                    <p>Finally, something cat people and dog people agree on — pet supplies delivery. Shop pet food, chew toys, and even costumes.</p>
+                    <a href="">
+                        Get pet supplies
+                    </a>
+                </div>
+            </div>
+           
+      </div>
+      <div id="container-dasher">
+        <h2>Unlocking opportunity for<br> Dashers and businesses</h2>
+    <div id="container-dasher-text">
+        <h3>Sign up to dash and get paid</h3>
+        <p>Deliver with the #1 Food and Drink App in the U.S., set<br>
+             your own schedule, and start earning cash anytime,<br>
+              anywhere.</p>
+              <a href="">
+                Become a Dasher
+              </a>
+    </div>
+    <div id="container-dasher-image">
+        <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/become_a_dasher_desktop.png"
+    alt="image">
+</div>
+    </div>
+    <div id="shopbag">
+        <div id="shopbag-image">
+            <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/work_with_doordash_desktop.png"
+            alt="image">
+        </div>
+
+        <div id="shopbag-text">
+            <h3>Grow your business with DoorDash</h3>
+            <p>Businesses large and small partner with DoorDash to reach new customers, increase order volume, and drive more sales.</p>
+            <a href="">
+                Become a partner
+            </a>
+        </div>
+    </div>
+    </div>
+    <!--
+        now creating the footer which is given a height and a margin top
+        value to return it to the normal flow of the page
+         in the css editor
+    -->
+    <footer>
+        <!--
+            creating a sub div and arranging it using a table
+        -->
+        <div id="top-city">
+            <p>Top cities</p>
+            <a href=""><table>
+                
+                <tr>
+                    <td>new york city</td>
+                    <td>san francisco</td>
+                    <td>denver</td>
+                </tr>
+                <tr>
+                    <td>los angeles</td>
+                    <td>seattle</td>
+                    <td>austin</td>
+                </tr>
+                <tr>
+                    <td>toronto</td>
+                    <td>atlanta</td>
+                    <td>washington dc,</td>
+                </tr>
+                <tr>
+                    <td>chicago</td>
+                    <td>queens</td>
+                    <td>dallas</td>
+                </tr>
+                <tr>
+                    <td>houston</td>
+                    <td>vancouver, bc</td>
+                    <td>melbourne</td>
+                </tr>
+                <tr>
+                    <td>brooklyn</td>
+                    <td>miami</td>
+                    <td>sydney</td>
+                </tr>
+                <tr>
+                    <td>san diego</td>
+                    <td>san antonio</td>
+                    <td>montreal</td>
+                </tr>
+                <tr>
+                    <td>las vegas</td>
+                    <td>phoenix</td>
+                    <td>all cities</td>
+                </tr>
+            </table>
+            </a>
+        </div>
+        <div id="cuisine">
+            <p>Top cuisines near you</p>
+            <a href="">
+            <table>
+                <tr>
+                    <td>pizza near me</td>
+                    <td>indian food near me</td>
+                </tr>
+                <tr>
+                    <td>chinese food near me</td>
+                    <td>dessert near me</td>
+                </tr>
+                <tr>
+                    <td>sushi near me</td>
+                    <td>burgers near me</td>
+                </tr>
+                <tr>
+                    <td>cafe near me</td>
+                    <td>asian food near me</td>
+                </tr>
+                <tr>
+                    <td>mexican food near me</td>
+                    <td>italian food near me</td>
+                </tr>
+                <tr>
+                    <td>thai food near me</td>
+                    <td>vegan food near me</td>
+                </tr>
+                <tr>
+                    <td>lunch near me</td>
+                    <td>sandwhiches near me</td>
+                </tr>
+                <tr>
+                    <td>seafood near me</td>
+                    <td>restaurants near me</td>
+                </tr>
+                
+
+            </table>
+        </a>
+
+       
+        </div>
+        <div id="popular">
+            <p>Popular categories</p>
+            <table>
+                <tr>
+                    <td>alcohol delivery</td>
+                    <td>catering near me</td>
+                </tr>
+                <tr>
+                    <td>back to school delivery</td>
+                    <td>convinience stores</td>
+                </tr>
+                <tr>
+                    <td>beauty stores</td>
+                    <td>dashmart near me</td>
+                </tr>
+                <tr>
+                    <td>beauty supply</td>
+                    <td>flower delivery</td>
+                </tr>
+            </table>
+           
+        </div>
+        <div id="popular2">
+            <table>
+                <tr>
+                    <td>grocery delivery</td>
+                    <td>retail stores near me</td>
+                </tr>
+                <tr>
+                    <td>halloween</td>
+                </tr>
+                <tr>
+                    <td>medicine delivery</td>
+                </tr>
+                <tr>
+                    <td>pet store near me</td>
+                </tr>
+            </table>
+        </div>
+        <div id="firstlist">
+        <p>Get to know us</p>
+        
+        <ul>
+            <a href="">
+            <li>about us</li>
+            <li>careers</li>
+            <li>investors</li>
+            <li>company blog</li>
+            <li>engineering blog</li>
+            <li>merchant blog</li>
+            <li>gift cards</li>
+            <li>package pickup</li>
+            <li>promotions</li>
+            <li>dasher central</li>
+            <li>linkedIn</li>
+            <li>glassdoor</li>
+            <li>accessibility</li>
+            <li>newsroom</li>
+        </a>
+        </ul>
+    
+    </div>
+    <div id="second-list">
+        <p>Let us help you</p>
+        <ul>
+            <a href="">
+            <li>account details</li>
+            <li>order history</li>
+            <li>help</li>
+        </a>
+        </ul>
+    </div>
+    <div id="third-list">
+        <p>Doing business</p>
+        <ul>
+            <a href="">
+            <li>become a dasher</li>
+            <li>list your business</li>
+            <li>get dashers for deliveries</li>
+            <li>get doordash for work</li>
+        </a>
+        </ul>
+       
+    </div>
+    <!--<div id="app-store">
+        <div class="text">
+            <i class="fa-solid fa-mobile"></i>
+        <p><span style="font-size: xx-small;">available on the</span><br> appstore</p>
+        </div>
+    </div>
+        <div>
+            <i class="fa-brands fa-google-play"></i>
+        </div>-->
+    
+    <div id="footer-bottom">
+        <a href="">terms of service</a>
+        <a href="">privacy</a>
+        <a href="">delivery locations</a>
+        <a href="">california privacy</a>
+        <a href="">do not share or sell my information</a>
+        <a href="">&copy; 2023 Doordash</a>
+        <span class="globe">
+            <i class="fa-solid fa-globe"></i><form action="">
+            
+                <select>
+                <i class="fa-solid fa-globe"></i>
+                <option value="english">english</option>
+            </select>
+        </form></span> &nbsp; 
+        <span class="social">
+        <i class="fa-brands fa-facebook"></i>&nbsp;
+        <i class="fa-brands fa-twitter"></i>&nbsp;
+        <i class="fa-brands fa-instagram"></i>&nbsp;
+    </span>
+    </div>
+    
+    </footer>
+</body>
+</html>
